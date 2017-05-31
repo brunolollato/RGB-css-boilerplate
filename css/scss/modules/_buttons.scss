@@ -1,0 +1,168 @@
+// Buttons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button {
+  display: inline-block;
+  height: 37px;
+  padding: 0 27px;
+  color: $font-white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: .1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: $secondary-color;
+  border-radius: $global-radius;
+  cursor: pointer;
+  border: 1px solid  $secondary-color;
+}
+.button-inverse{
+  @extend .button;
+  color: $secondary-color;
+  background-color: #FFF;
+  margin: 0 auto;
+  display: table;
+}
+@media (#{$bp-larger-than-phablet}) {
+  .button-inverse{
+    margin: 0;
+  }
+}
+input {
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    display: inline-block;
+    height: 37px;
+    padding: 0 27px;
+    color: $font-white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: $secondary-color;
+    border-radius: $global-radius;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.button:hover,
+button:hover {
+  color: $secondary-color;
+  outline: 0;
+  background-color: $light-grey;
+  border: 1px solid  $secondary-color;
+}
+
+.button-inverse:hover {
+  color: $font-white;
+  outline: 0;
+  background-color: transparent;
+  border: 1px solid  $font-white;
+}
+
+input {
+  &[type="submit"]:hover,
+  &[type="reset"]:hover,
+  &[type="button"]:hover {
+    color: $secondary-color;
+    border-color: lighten($dark-grey, 33.3%);
+    outline: 0;
+    background-color: $light-grey;
+    border: 1px solid  $secondary-color;
+  }
+}
+
+.button:focus,
+button:focus {
+  color: $font-white;
+  background-color: darken($secondary-color, 20%);
+  border-color: darken($secondary-color, 20%);
+  outline: 0;
+}
+
+input {
+  &[type="submit"]:focus,
+  &[type="reset"]:focus,
+  &[type="button"]:focus {
+    color: $font-white;
+    background-color: darken($secondary-color, 20%);
+    border-color: darken($secondary-color, 20%);
+    outline: 0;
+  }
+}
+
+.button.button-primary,
+button.button-primary {
+  color: #fff;
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+input {
+  &[type="submit"].button-primary,
+  &[type="reset"].button-primary,
+  &[type="button"].button-primary {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.button.button-primary:hover,
+button.button-primary:hover {
+  color: #fff;
+  background-color: $link-color;
+  border-color: $link-color;
+}
+
+input {
+  &[type="submit"].button-primary:hover,
+  &[type="reset"].button-primary:hover,
+  &[type="button"].button-primary:hover {
+    color: #fff;
+    background-color: $link-color;
+    border-color: $link-color;
+  }
+}
+
+.button.button-primary:focus,
+button.button-primary:focus {
+  color: #fff;
+  background-color: $link-color;
+  border-color: $link-color;
+}
+
+input {
+  &[type="submit"].button-primary:focus,
+  &[type="reset"].button-primary:focus,
+  &[type="button"].button-primary:focus {
+    color: #fff;
+    background-color: $link-color;
+    border-color: $link-color;
+  }
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    height: 37px;
+    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+    background-color: #fff;
+    border: 1px solid lighten($border-color, 8.8%);
+    border-radius: $global-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+}

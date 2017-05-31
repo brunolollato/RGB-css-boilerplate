@@ -1,0 +1,43 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 570px" !default;
+$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-desktop   : "min-width: 1000px" !default;
+$bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Colors
+$light-grey: #fff !default;
+$dark-grey: #6f6f6f !default;
+$primary-color: #404291 !default;
+$secondary-color: #31337e !default;
+$tertiary-color: #0e3859 !default;
+$quaternary-color: #2e70d6 !default;
+$border-color: #ebecf4 !default;
+$link-color: #0e3859 !default;
+$font-color: #6f6f6f !default;
+$font-white:  #fff !default;
+
+// Typography
+$font-family: "Fira Sans", sans-serif !default;
+
+// Set the number of columns you want to use on your layout.
+$flexboxgrid-grid-columns: 12 !default;
+// Set the gutter between columns.
+$flexboxgrid-gutter-width: 5rem !default;
+// Set a margin for the container sides.
+$flexboxgrid-outer-margin: 2rem !default;
+// Create or remove breakpoints for your project
+// Syntax:
+// name SIZErem,
+$flexboxgrid-breakpoints:
+  sm 15rem 27rem,
+  md 45rem 55rem,
+  lg 64rem 97rem,
+  xl 80rem 113rem !default;
+$flexboxgrid-max-width: 1200px !default;
+
+// Misc
+$global-radius: 7px !default;
