@@ -1,0 +1,75 @@
+// Utilities
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+//Text Align
+.align-center{
+	text-align: center;
+}
+
+.align-right{
+	text-align: right;
+}
+
+//Text Weight
+.light{
+	font-weight: 300;
+}
+
+.medium{
+	font-weight: 500;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+//Colors
+.primary-color{
+	color: $primary-color;
+}
+
+.secondary-color{
+	color: $secondary-color;
+}
+
+.tertiary-color{
+	color: $tertiary-color;
+}
+
+.quaternary-color{
+	color: $quaternary-color;
+}
+.white{
+	color: $font-white;
+}
+//Display
+
+.inline{
+	display: inline;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
